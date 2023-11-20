@@ -9,9 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class EmailResponseDTO {
 
-    private String id;
+    private Long id;
     private String to;
     private String from;
     private String subject;
     private String body;
+    private String status;
 }

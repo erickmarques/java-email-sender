@@ -6,8 +6,9 @@ import java.time.LocalDateTime;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Data
 @AllArgsConstructor
@@ -26,10 +27,7 @@ public abstract class Base implements Serializable{
 
     @CreatedDate
     @Column(name = "date_created")
+    @JsonIgnore
     private LocalDateTime dateCreated;
-
-    @LastModifiedDate
-    @Column(name = "date_last_modified")
-    private LocalDateTime dateLastModified;
 }
 
