@@ -1,0 +1,33 @@
+server:
+  port: 8080  
+spring:
+  application:
+    name: "java-email-sender"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:postgresql://localhost:15432/java-email-sender?currentSchema=public
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      schema: public
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+#rabbitMQ config
+mq:
+  queues:
+    sender-email: sender-email
+
+#swagger config
+springdoc:
+  swagger-ui: 
+   path: "/swagger-ui.html"    
