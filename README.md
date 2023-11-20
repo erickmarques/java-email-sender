@@ -1,5 +1,12 @@
-# java-email-sender
-Exemplo de envio de E-mail com o Amazon Simple Email Service
+# Java Email Sender
+Projeto Simples de como enviar e-mail usando o serviço de Email da Amazon (Amazon Simple Email Service - SES) utilizando arquitetura de microsserviço. 
 
-## mensageria com rabbitMQ
-Enviado e-mail para fila
+## tecnologias:
+* Springboot
+* SpringData
+* SpringCloud
+* Postgres
+* RabbitMQ
+* Maven
+
+Fique à vontade para contribuir com este projeto.
