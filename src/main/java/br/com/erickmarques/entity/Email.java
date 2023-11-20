@@ -18,6 +18,9 @@ public class Email extends Base {
 	@Column(name = "from_email", updatable = false)
 	private String from;
 	
+	@Column(name = "subject_email", updatable = false)
+	private String subject;
+
 	@Column(name = "body_email", updatable = false)
 	private String body;
 }

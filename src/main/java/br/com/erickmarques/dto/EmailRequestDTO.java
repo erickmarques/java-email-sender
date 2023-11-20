@@ -19,6 +19,9 @@ public class EmailRequestDTO {
     @Email(message = "{field.email.valid}")
     private String from;
 
+    @NotEmpty(message = "{field.subject.required}")
+    private String subject;
+
     @NotEmpty(message = "{field.body.required}")
     private String body;
 }

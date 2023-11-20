@@ -12,5 +12,6 @@ public class EmailResponseDTO {
     private String id;
     private String to;
     private String from;
+    private String subject;
     private String body;
 }
