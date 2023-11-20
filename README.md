@@ -1,5 +1,5 @@
 # Java Email Sender
-Projeto Simples de como enviar e-mail usando o serviço de Email da Amazon (Amazon Simple Email Service - SES) utilizando arquitetura de microsserviço. 
+Projeto Simples de como enviar e-mail utilizando o serviço de Email da Amazon (Amazon Simple Email Service - SES) com mensageria e arquitetura de microsserviço. 
 
 ## tecnologias:
 * Springboot
